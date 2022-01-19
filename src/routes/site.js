@@ -4,4 +4,4 @@ const siteController = require('../controllers/siteController')
 
 router.get('/', siteController.index)
 
-module.exports = router
+            module.exports = router

@@ -37,7 +37,9 @@
       "src/**/*.{js, json, scss}": ["prettier --write 'src/**/*.js'"]
    },
    "husky": {
-      "pre-commit": "lint-staged"
+      "hooks": {
+         "pre-commit": "lint-staged"
+      }
    },
    "prettier": {
       "trailingComma": "all",
