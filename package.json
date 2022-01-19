@@ -22,17 +22,6 @@
       "url": "https://github.com/CongDat249/node-server/issues"
    },
    "homepage": "https://github.com/CongDat249/node-server#readme",
-   "dependencies": {
-      "express": "^4.17.2",
-      "express-handlebars": "^6.0.2",
-      "morgan": "^1.10.0"
-   },
-   "devDependencies": {
-      "husky": "^7.0.4",
-      "lint-staged": "^12.2.0",
-      "nodemon": "^2.0.15",
-      "prettier": "^2.5.1"
-   },
    "lint-staged": {
       "src/**/*.{js,json,scss}": "prettier --write"
    },
@@ -46,5 +35,16 @@
       "tabWidth": 3,
       "semi": false,
       "singleQuote": true
+   },
+   "dependencies": {
+      "express": "^4.17.2",
+      "express-handlebars": "^6.0.2",
+      "morgan": "^1.10.0"
+   },
+   "devDependencies": {
+      "husky": "^7.0.4",
+      "lint-staged": "^12.2.0",
+      "nodemon": "^2.0.15",
+      "prettier": "^2.5.1"
    }
 }
