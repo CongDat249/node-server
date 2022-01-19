@@ -27,7 +27,7 @@
    },
    "husky": {
       "hooks": {
-         "pre-commit": "pre-add"
+         "pre-commit": "lint-staged"
       }
    },
    "prettier": {
