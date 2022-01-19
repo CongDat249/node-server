@@ -7,7 +7,6 @@ const hdb = require('express-handlebars');
 const routes = require('./routes')
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 // setup logger
 const logPath = path.join(__dirname, 'access.log');
@@ -33,6 +32,6 @@ app.set('views', path.join(__dirname, '/resources/views'))
 // Setup routes
 routes(app);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
    console.log(`Server is running at http://localhost:${port}`);
 });
