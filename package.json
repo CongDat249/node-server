@@ -5,7 +5,6 @@
    "main": "src/index.js",
    "scripts": {
       "pre-add": "lint-staged",
-      "prepare": "husky install",
       "beautify": "prettier --write 'src/**/*.js'",
       "start": "node src/index.js",
       "nodemon": "nodemon src/index.js",
@@ -27,7 +26,7 @@
    },
    "husky": {
       "hooks": {
-         "pre-commit": "lint-staged"
+         "pre-commit": "npm run pre-add"
       }
    },
    "prettier": {

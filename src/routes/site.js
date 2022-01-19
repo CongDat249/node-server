@@ -4,4 +4,4 @@ const router = express.Router()
 
 router.get('/', siteController.index)
 
-module.exports = router
+   module.exports = router
