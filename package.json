@@ -34,7 +34,7 @@
       "prettier": "^2.5.1"
    },
    "lint-staged": {
-      "src/**/*.{js, json, scss}": ["prettier --write 'src/**/*.js'"]
+      "src/**/*.{js,json,scss}": "prettier --write"
    },
    "husky": {
       "hooks": {
