@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const fs = require('fs')
 const path = require('path')
 const hdb = require('express-handlebars')
+const db = require('./config/db');
 // Import routes
 const routes = require('./routes')
 
@@ -19,6 +20,9 @@ app.use(morgan('tiny', { stream: accessLogStream }))
 
 // setup static file
 app.use(express.static(path.join(__dirname, 'public')))
+
+// connect mongodb
+db.connect();
 
 // setup template engine
 app.engine(
